@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MAMayor">
+
+    <ImageView
+        android:id="@+id/imgcarro"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:src="@drawable/coche_deportivo"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgcarro"
+        android:layout_centerInParent="true"
+        android:text="Multiplicacion"
+        android:textSize="25sp"
+
+        />
+
+    <EditText
+        android:id="@+id/txtNumero3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitulo"
+        android:layout_marginTop="35sp"
+        android:hint="Numero1"
+        android:layout_marginLeft="10sp"
+        />
+    <EditText
+        android:id="@+id/txtNumero4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNumero3"
+        android:layout_marginTop="35sp"
+        android:hint="Numero2"
+        android:layout_marginLeft="10sp"
+        />
+
+    <EditText
+        android:id="@+id/txtValor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNumero4"
+        android:layout_marginTop="35sp"
+        android:hint="Resultado"
+        android:layout_marginLeft="10sp"
+        />
+
+    <Button
+        android:id="@+id/btnMostrar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtValor2"
+        android:layout_margin="25sp"
+        android:text="Multiplicacion"
+        android:onClick="pulsar"
+        />
+    <Button
+        android:id="@+id/btnEmpezar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMostrar2"
+        android:layout_margin="25sp"
+        android:text="Empezar"
+        android:onClick="pulsar"
+        />
+</RelativeLayout>
